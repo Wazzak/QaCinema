@@ -1,0 +1,52 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MasterPage.master.cs" Inherits="QaCinemaSite.MasterPage" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>    
+</head>
+<body>
+    <form id="form1" runat="server">
+    <span class="banner">
+        <a href="HomePage.aspx">
+        <span class="imageItem">
+           <img src="logo.jpg" />
+        </span>
+        <span class="pageHeading">
+            QA Cinemas
+        </span>
+        
+        </a>
+    </span>
+        <span class="navbar">
+        <asp:Button ID="listingsButton" runat="server" Text="Listings" OnClick="listingsClick"/>
+        <asp:Button class="buttonItem" id="newReleasesButton" text="New Releases" runat="server" OnClick="newReleaseClick"/>
+        <asp:Button class="buttonItem" id="ticketBookingButton" text="Ticket Booking" runat="server" OnClick="ticketBookingClick"/>
+        <asp:Label class="labelText" id="siteSearchLabel" runat="server" Text="Search Site:"></asp:Label>
+        <asp:TextBox class="textInput" id="siteSearchBar" runat="server" />
+        <asp:Button class="buttonItem" id="openingTimesButton" text="Opening Times" runat="server" OnClick="openingTimesClick"/>
+        <asp:Button class="buttonItem" id="classificationsButton" text="Classifications" runat="server" OnClick="classificationsClick"/>
+        <asp:Button class="buttonItem" id="placesToGoButton" text="Places to Go" runat="server" OnClick="placesToGoClick"/>
+        <asp:Button class="buttonItem" id="gettingThereButton" text="Getting There" runat="server" OnClick="gettingThereClick"/>
+        <asp:Button class="buttonItem" id="discussionButton" text="Discussion Board" runat="server" OnClick="discussionBoardClick"/>
+        <asp:Button class="buttonItem" id="aboutUsButton" text="About Us" runat="server" OnClick="aboutUsClick"/>
+        <asp:Button class="buttonItem" id="contactUsButton" text="Contact Us" runat="server" OnClick="contactUsClick"/>        
+    </span>
+
+         <span class="pageContent">
+          <asp:ContentPlaceHolder id="pageContent" runat="server">
+       
+
+          
+          </asp:ContentPlaceHolder>
+          </span>    
+
+    <span class="pageFooter">
+        <a class="linkItem" id="homeFooterLink" href="HomePage.aspx">Home</a>
+        <a class="linkItem" id="aboutUsFooterLink" href="AboutUsPage.aspx">About Us</a>
+        <a class="linkItem" id="contactUsFooterLink" href="ContactUsPage.aspx">Contact Us</a>
+    </span>        
+    </form>
+</body>
+</html>
