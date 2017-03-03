@@ -95,6 +95,10 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="AboutUsPage.aspx" />
+    <Content Include="App_Data\QAC.mdf" />
+    <Content Include="App_Data\QAC_log.ldf">
+      <DependentUpon>QAC.mdf</DependentUpon>
+    </Content>
     <Content Include="ClassificationsPage.aspx" />
     <Content Include="ContactUsPage.aspx" />
     <Content Include="DiscussionPage.aspx" />
