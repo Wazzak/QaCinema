@@ -1,0 +1,17 @@
+html
+{
+	background-color:#a0d0d3;
+}
+
+.banner
+{
+	background-color:#8d97ba;
+	position:fixed;
+	width:100%;
+	Height:200px;
+}
+
+.pageContent
+{
+	margin-top:200px;
+}
