@@ -1,13 +1,14 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPage.master" AutoEventWireup="true" CodeBehind="ClassificationsPage.aspx.cs" Inherits="QaCinemaSite.ClassificationsPage" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="pageContent" runat="server">
    
-    <span class="pageHeader">
+    <span class="pageHeading">
         The film classification system
     </span>
     <span class="imageItem" id="classImage1">
         <img src="assets/UClass.png" />
     </span>
     <span class="bodyText" id="classText1">
+        <u>U Rating</u><br />
         All ages admitted. There is almost nothing unsuitable for children aged 4 years and over.
     </span>
     <span class="imageItem" id="classImage2">

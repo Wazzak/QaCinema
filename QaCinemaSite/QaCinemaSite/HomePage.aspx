@@ -2,13 +2,15 @@
 
 
 <asp:Content ID="Content1" ContentPlaceHolderID="pageContent" runat="server">
-   <span class="pageHeader" id="homeHeader">
+   <span class="pageHeading" id="homeHeader">
        Welcome To QA Cinemas
    </span>
 
     <span class="contentBox" id="homeContent1">
         <span class="bodyText" id="homeBody1">
-            Welcome to QA Cinemas...
+            Welcome to QA Cinemas. We hope you enjoy your stay.
+
+            Qa Cinemas was founded in 1926.
         </span>
     </span>
 

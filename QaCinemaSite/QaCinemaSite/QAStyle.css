@@ -1,6 +1,56 @@
 html
 {
 	background-color:#a0d0d3;
+	font-family:Georgia;
+}
+
+a:visited
+{
+	color:white;
+}
+
+a:active
+{
+	color:#d20018;
+}
+
+.imageItem
+{
+	
+}
+
+.pageContent
+{
+	position:absolute;
+	top:240px;
+	left:10%;
+	background-color:#b4edd2;
+	width:80%;
+	height:100%;
+}
+
+.navbar
+{
+	position:fixed;
+	top:200px;
+	z-index:100;
+	background-color:#45124f;
+	height:5%;
+	padding-left:5px;
+	width:100%;
+	left:0px;
+}
+
+.navbar *
+{
+	position:relative;
+	top:30%;
+	color:white;
+}
+
+.navbar .buttonItem
+{
+	color:black;
 }
 
 .banner
@@ -9,9 +59,198 @@ html
 	position:fixed;
 	width:100%;
 	Height:200px;
+	text-align:right;
+	left:0px;
+	top:0px;
+	z-index:99;
 }
 
-.pageContent
+#bannerHeading
 {
-	margin-top:200px;
+	position:relative;
+	right:25px;
+	top:50%;
+}
+
+#QALogo
+{
+	position:absolute;
+	left: 5px;
+	top: 10px;
+	width:15%;
+	height:90%;
+}
+
+
+
+.pageHeading
+{
+	font-size: 80px;
+	position:relative;
+	width:100%;
+	text-align:center;
+	color:white;
+}
+
+#homeImg1
+{
+	position:relative;
+	left:600px;
+	top:50px;
+}
+
+#homeImg1 img
+{
+	position:relative;
+	height:40%;
+	width:50%;
+}
+
+.pageFooter
+{
+	position:fixed;
+	bottom:0px;
+	height:3%;
+	background-color:#45124f;
+	width:100%;
+	left:0px;
+	z-index:101;	
+}
+
+.bodyText
+{
+	background-color:#8d97ba;
+	border-style:solid;
+	border-width:3px;
+	border-radius:8px;
+	border-color:#45124f;
+	padding:5px;
+	color:white;
+}
+
+#homeBody1
+{
+	position:absolute;
+	left:20px;
+	top:140px;
+	height:50%;
+	width:40%;
+}
+
+.pageFooter *
+{
+	color:white;
+	margin-right:28%;
+	width:50px;
+	padding-left:5px;
+}
+
+#homeHeader
+{
+	top:10px;
+	left:10%;
+}
+
+#classImage1
+{
+	position:absolute;
+	left:60%;
+	top:15%;
+}
+
+#classImage1 img
+{
+	width:25em;
+	height:20em;
+}
+
+#classText1
+{
+	position:absolute;
+	left:20px;
+	top:200px;
+}
+
+#classImage2
+{
+	position:absolute;
+	left:60%;
+	top:50%;
+}
+
+#classImage2 img
+{
+	width:25em;
+	height:20em:
+}
+
+#classText2
+{
+	position:absolute;
+	left:20px;
+	top:600px;
+	width:50%;
+}
+
+#classImage3
+{
+	position:absolute;
+	left:60%;
+	top:90%;
+}
+
+#classImage3 img
+{
+	width:25em;
+	height:25em;
+}
+
+#classText3
+{
+	position:absolute;
+	left:20px;
+	top:850px;
+	width:50%;
+}
+
+#classImage4
+{
+	position:absolute;
+	left:60%;
+	top:140%;
+}
+
+#classImage4 img
+{
+	width:25em;
+	height:25em;
+}
+
+#classText4
+{
+	position:absolute;
+	left:20px;
+	top:1350px;
+	width:50%;
+}
+
+#classImage5
+{
+	position:absolute;
+	left:60%;
+	top:190%;
+}
+
+#classImage5 img
+{
+	width:25em;
+	height:25em;
+}
+
+#classText5
+{
+position:absolute;
+	left:20px;
+	top:1850px;
+	width:50%;	
 }

@@ -5,27 +5,24 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <title></title>  
-    <link rel="stylesheet" href="QAStyle.css" type="text/css" />   
+    <link rel="stylesheet" href=".//QAStyle.css" type="text/css" />   
 </head>
 <body>
     <form id="form1" runat="server">
     <span class="banner">
         <a href="HomePage.aspx">
         <span class="imageItem">
-           <img src="logo.jpg" />
+           <img src="logo.jpg" id="QALogo" />
         </span>
-        <span class="pageHeading">
+        <span class="pageHeading" id="bannerHeading">
             QA Cinemas
-        </span>
-        
+        </span>        
         </a>
     </span>
         <span class="navbar">
-        <asp:Button ID="listingsButton" runat="server" Text="Listings" OnClick="listingsClick"/>
+        <asp:Button class="buttonItem" ID="listingsButton" runat="server" Text="Listings" OnClick="listingsClick"/>
         <asp:Button class="buttonItem" id="newReleasesButton" text="New Releases" runat="server" OnClick="newReleaseClick"/>
         <asp:Button class="buttonItem" id="ticketBookingButton" text="Ticket Booking" runat="server" OnClick="ticketBookingClick"/>
-        <asp:Label class="labelText" id="siteSearchLabel" runat="server" Text="Search Site:"></asp:Label>
-        <asp:TextBox class="textInput" id="siteSearchBar" runat="server" />
         <asp:Button class="buttonItem" id="openingTimesButton" text="Opening Times" runat="server" OnClick="openingTimesClick"/>
         <asp:Button class="buttonItem" id="classificationsButton" text="Classifications" runat="server" OnClick="classificationsClick"/>
         <asp:Button class="buttonItem" id="placesToGoButton" text="Places to Go" runat="server" OnClick="placesToGoClick"/>
@@ -33,20 +30,22 @@
         <asp:Button class="buttonItem" id="discussionButton" text="Discussion Board" runat="server" OnClick="discussionBoardClick"/>
         <asp:Button class="buttonItem" id="aboutUsButton" text="About Us" runat="server" OnClick="aboutUsClick"/>
         <asp:Button class="buttonItem" id="contactUsButton" text="Contact Us" runat="server" OnClick="contactUsClick"/>        
+        <asp:Label class="labelText" id="siteSearchLabel" runat="server" Text="Search Site:"></asp:Label>
+        <asp:TextBox class="textInput" id="siteSearchBar" runat="server" />  
     </span>
 
-         <span class="pageContent">
+         <div class="pageContent">
           <asp:ContentPlaceHolder id="pageContent" runat="server">
        
 
           
           </asp:ContentPlaceHolder>
-          </span>    
+          </div>    
 
     <span class="pageFooter">
         <a class="linkItem" id="homeFooterLink" href="HomePage.aspx">Home</a>
         <a class="linkItem" id="aboutUsFooterLink" href="AboutUsPage.aspx">About Us</a>
-        <a class="linkItem" id="contactUsFooterLink" href="ContactUsPage.aspx">Contact Us</a>
+        <a class="linkItem" id="contactUsFooterLink" href="ContactUsPage.aspx">Contact</a>
     </span>        
     </form>
 </body>
